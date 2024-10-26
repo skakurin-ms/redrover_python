@@ -73,6 +73,7 @@ def test_update_case(get_case_id):
             "description": "test description",
             "steps": [
                 "step 1"
+
             ],
             "expected_result": "test expected result",
             "priority": "низкий"
