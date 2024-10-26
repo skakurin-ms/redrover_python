@@ -17,6 +17,4 @@ def get_case_id():
 
         }
     )
-    print("----------------")
-    print(response.get_value_with_key("id"))
     return response.get_value_with_key("id")
