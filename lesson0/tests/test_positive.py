@@ -1,8 +1,8 @@
+import requests
 from requests import request
 from http import HTTPStatus
 
 # API, который использовался для написания автотестов: <https://reqres.in/>
-
 single_user_response = {
     "data": {
         "id": 2,
@@ -16,7 +16,6 @@ single_user_response = {
         "text": "To keep ReqRes free, contributions towards server costs are appreciated!",
     },
 }
-
 
 def test_single_user():
     response = request(
