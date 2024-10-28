@@ -1,4 +1,9 @@
+from pprint import pprint
+
 import pytest
+import prettyprint
+from jsonschema import ValidationError, validate
+from requests import Response
 from lesson1.api_tests.utils.api_client import client
 
 
@@ -14,7 +19,7 @@ def get_case_id():
                 "step 1"
             ],
             "expected_result": "test expected result",
-            "priority": "Высокий"
+            "priority": "высокий"
 
         }
     )
